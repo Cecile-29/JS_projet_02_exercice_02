@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <title>JS_projet_02 exercice_02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <h1 class="">JS_projet_02 exercice_02</h1>
+    <p>Afficher une modale à la perte du focus dans l'input.</p>
+    <div class="row col-6 p-3 align-content-center" >
+      <form class="" action="index.html" method="post">
+      <label for="name">Votre nom :</label>
+       <!-- l'événement onblur permet d'exécuter un script JS lorsqu'un utilisateur quitte un champ d'entrée:
+     ou lorsqu'un objet perd le focus ici on appelera la fonction displayModalOnBlur-->
+      <input type="text" id="fieldInput" name="name" onblur="displayModalOnBlur()">
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- <script type="text/javascript">
+  fieldInput.addEventListener('blur', (event) =>
+  {
+  alert('Merci de votre participation !');
+  }
+  , true);
+  </script> -->
+  </body>
+</html>
